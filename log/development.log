@@ -25633,3 +25633,41 @@ Migrating to AddPhoneNumberToUsers (20120618072229)
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("companies")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
   [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120521231744)
+Migrating to AddTypeAndReferredByToUsers (20120521232356)
+Migrating to AddIndexToUsersEmail (20120521233549)
+Migrating to RenameTypeToUserType (20120521234321)
+Migrating to AddSkypeToUser (20120614165133)
+Migrating to AddUniqueEmail (20120614190436)
+Migrating to CreateCompanies (20120618071331)
+Migrating to ChangeUserSkypeToCompanyId (20120618071935)
+Migrating to AddPhoneNumberToUsers (20120618072229)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("companies")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120521231744)
+Migrating to AddTypeAndReferredByToUsers (20120521232356)
+Migrating to AddIndexToUsersEmail (20120521233549)
+Migrating to RenameTypeToUserType (20120521234321)
+Migrating to AddSkypeToUser (20120614165133)
+Migrating to AddUniqueEmail (20120614190436)
+Migrating to CreateCompanies (20120618071331)
+Migrating to ChangeUserSkypeToCompanyId (20120618071935)
+Migrating to AddPhoneNumberToUsers (20120618072229)
+Migrating to AddIndexToCompaniesName (20120618073535)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("companies")
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "index_companies_on_name" ON "companies" ("name")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120618073535')
+  [1m[36m (48.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("companies")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_companies_on_name')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
