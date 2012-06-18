@@ -1,4 +1,10 @@
 Pling::Application.routes.draw do
+
+  resources :companies
+  get "companies/new"
+
+  get "companies/show"
+
   match '/free', to: 'users#new_free'
   #match '/freehr', to: 'users#new_free_hr'
   #match '/thanks_free', to: 'static_pages#thanks_free'

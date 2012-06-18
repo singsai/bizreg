@@ -2,6 +2,10 @@ class Company < ActiveRecord::Base
   has_many :users
   
   attr_accessible :name, :logo
+  
+  def to_param
+    :name
+  end
 end
 # == Schema Information
 #

@@ -1,0 +1,25 @@
+<%= provide(:title, 'Company Creation') %>
+<div id="skype-header" class="row span6 offset3">
+<!--h1>PalmLing Distribution Portal</h1-->
+<h2>Enter company information</h2>
+<!--p>Thank you for your interest in PalmLing! Please complete the form below to get started.
+</p-->
+</div>
+
+<div class="row">
+  <div class="span6 offset3 temp-skype">
+    <%= form_for(@company) do |f| %>
+      <%= f.error_messages %> 
+
+      <%= f.label :name, 'Company name' %>
+      <%= f.text_field :name %>
+
+      <%= f.label :logo, "File name of logo" %>
+      <%= f.text_field :logo %>
+			
+      <%= f.submit "Create Company", class: "btn btn-large btn-success" %>
+			
+    <% end %>
+  </div>
+</div>
+

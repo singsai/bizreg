@@ -1,21 +1,8 @@
-<%= provide(:title, 'for Skype - Step 1') %>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32630458-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<%= provide(:title, 'Distribution Portal') %>
 <div id="skype-header" class="row span6 offset3">
-<h1>PalmLing for Skype</h1>
+<h1>PalmLing Distribution Portal</h1>
 <h2>Step 1 - Signup</h2>
-<p>Thank you for your interest in PalmLing for Skype!  You just need to sign up and then select a plan.  Please complete the form below to get started.
+<p>Thank you for your interest in PalmLing! Please complete the form below to get started.
 </p>
 </div>
 
@@ -30,10 +17,10 @@
       <%= f.label :email %>
       <%= f.text_field :email %>
 
-      <%= f.label :skype %>
-      <%= f.text_field :skype, :placeholder => "your username on Skype" %>
+      <%= f.label :phone_number %>
+      <%= f.text_field :phone_number %>
 			
-      <%= f.submit "Sign up for Premium", class: "btn btn-large btn-primary" %>
+      <!--%= f.submit "Sign up for Premium", class: "btn btn-large btn-primary" %-->
 			
 			<div class='hideme'>
 			<%= f.text_field :user_type %><%= f.text_field :referred_by %>
