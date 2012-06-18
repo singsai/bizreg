@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
   validates_format_of :email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
   validates :phone_number, :presence => true
 
-  private
+  #private
 
   # def send_welcome_email
   #    unless self.email.include?('@palmling.com') && Rails.env != 'test'

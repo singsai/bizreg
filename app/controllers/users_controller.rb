@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     
   def create
     @user = User.new(params[:user])
+    @company = Company.find_by_permalink(params[:id])
     if @user.save
       flash[:success] = "Thanks for signing up"
       
