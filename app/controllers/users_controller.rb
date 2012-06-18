@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @company = Company.find_by_name(params[:id])
     @user.user_type = params[:user_type]
   end
 
@@ -11,7 +12,6 @@ class UsersController < ApplicationController
     
   def create
     @user = User.new(params[:user])
-    #@company = Company.find_by_name(params[:id])
     if @user.save
       flash[:success] = "Thanks for signing up"
       
@@ -19,8 +19,8 @@ class UsersController < ApplicationController
       #redirect_to '/admin/companies/new' #works
       
       #alert(@company.name)
-      
-      UserMailer.welcome_email(@user).deliver      
+      @company = Company.find_by_permalink(@user.company_id)
+      UserMailer.welcome_email(@user, @company).deliver      
       #UserMailer.welcome_email(@user, @company).deliver      
       redirect_to '/registrationconfirmed'
       
