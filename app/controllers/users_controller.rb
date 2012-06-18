@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       #redirect_to @user
       #redirect_to '/admin/companies/new' #works
       
-      UserMailer.welcome_email(@user).deliver      
+      UserMailer.welcome_email(@user, @company).deliver      
       redirect_to '/registrationconfirmed'
       
         
