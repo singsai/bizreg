@@ -2,6 +2,9 @@
   <div>
     <div class="container">
       <%= link_to logo, 'http://www.palmling.com', id: "logo" %>
+	  <div style="float: right">
+	  <%= image_tag("#{params[:id]}.png", alt: "IBM", class: "round", :size=>'150x150') %></div>
+	
 	  <%= favicon_link_tag 'palmling.ico' %>
     </div>
   </div>
