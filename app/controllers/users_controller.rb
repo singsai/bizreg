@@ -14,7 +14,12 @@ class UsersController < ApplicationController
     if @user.save
       flash[:success] = "Thanks for signing up"
       
-      redirect_to @user
+      #redirect_to @user
+      #redirect_to '/admin/companies/new' #works
+      
+      UserMailer.welcome_email(@user).deliver      
+      redirect_to '/registrationconfirmed'
+      
         
       # if request.referer.include? "free"
       #   UserMailer.welcome_email(@user, "free").deliver
@@ -25,7 +30,14 @@ class UsersController < ApplicationController
       # end
       
     else
-      render 'new'
+      #render '/register/new'
+      #render :nothing => true
+
+      render 'companies/register' 
+
+
+
+      #render :template => 'companies#register'
     end            
   end
 

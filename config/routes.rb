@@ -1,12 +1,21 @@
 Pling::Application.routes.draw do
 
+  get 'companies/new', to: 'users#new'
+  get 'admin/companies/new', to: 'companies#new'
+
   resources :companies do
     member do
-      get 'register'
+      match 'register'
     end
   end
+
+  # resources :companies do
+  #   match 'register'
+  #   resources :users do
+  #   end
+  # end
   
-  get "companies/new"
+#  get "companies/new"
 
   get "companies/show"
 
@@ -28,7 +37,7 @@ Pling::Application.routes.draw do
   match '/press', to: 'static_pages#about'
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
-  match '/palmlingforskypeconfirmation', to: 'static_pages#thanks'
+  match '/registrationconfirmed', to: 'static_pages#thanks'
 
   #match '/thanks', to: 'users#thanks'
 
