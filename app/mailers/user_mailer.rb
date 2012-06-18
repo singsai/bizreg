@@ -1,12 +1,12 @@
 class UserMailer < ActionMailer::Base
   default :from => "info@palmling.com"
   
-  def welcome_email(user, company)
+  def welcome_email(user)
     mail(:to => user.email, :bcc => "nick@palmling.com", :subject => "Thank you for Signing up with PalmLing!", 
     :content_type => "text/html", :body => "Dear #{user.name}, <br/><br/>Thank you for registering with 
     <a href='http://palmling.com'>PalmLing</a>. 
     PalmLing delivers real-time access to a community of human translators to facilitate cross language conversations. 
-    As a valued member of #{company.name}, you will have free access to the service for 5 days. 
+    As a valued member of #{user.company_id}, you will have free access to the service for 5 days. 
     This promotion is being provided in honor of BUSINESS_LEAD_AND_TITLE__provided_by_PL_team. 
     <br/>
     After 5 days, this phone number will expire and you can register for a premium account by visiting
