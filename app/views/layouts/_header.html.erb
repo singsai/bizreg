@@ -3,7 +3,13 @@
     <div class="container">
       <%= link_to logo, 'http://www.palmling.com', id: "logo" %>
 	  <div style="float: right">
-		<%= image_tag("ibm.png", alt: "IBM", class: "round", :size=>'150x150') %></div>
+	  <%
+	  	@company = Company.find_by_permalink(params[:id])
+	  %>	
+	  <% if @company %>
+		<img src="<%= @company.logo_file.to_s %>" id="company_logo">
+</div>
+	  <% end %>
 	  <!-- image_tag("#{params[:id]}.png", alt: "IBM", class: "round", :size=>'150x150') %--></div>
 	
 	  <%= favicon_link_tag 'palmling.ico' %>

@@ -1,7 +1,7 @@
 class Company < ActiveRecord::Base
   has_many :users
   
-  attr_accessible :name, :logo
+  attr_accessible :name, :logo_file
   before_save :create_permalink
   
   def to_param

@@ -37,7 +37,7 @@ Pling::Application.routes.draw do
   match '/press', to: 'static_pages#about'
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
-  match '/registrationconfirmed', to: 'static_pages#thanks'
+  match '/registrationconfirmed', to: 'companies#thanks'
 
   #match '/thanks', to: 'users#thanks'
 

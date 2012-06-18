@@ -111,6 +111,24 @@ p {
 	}
 }
 
+#company_logo {
+  float: right;
+  margin-right: 10px;
+  width:150px;
+  height:100px;
+  font-size: 1.7em;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 30px;
+  font-weight: bold;
+  line-height: 1;
+	:hover {
+	  color: $white;
+	  text-decoration: none;
+	}
+}
+
 
 
 /* footer */
