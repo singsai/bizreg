@@ -2,10 +2,16 @@ class Company < ActiveRecord::Base
   has_many :users
   
   attr_accessible :name, :logo
+  before_save :create_permalink
   
   def to_param
-    :name
+    permalink
   end
+  
+  private
+       def create_permalink
+            self.permalink = name.downcase
+       end  
 end
 # == Schema Information
 #

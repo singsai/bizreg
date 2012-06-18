@@ -13,7 +13,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :phone_number, :user_type, :referred_by
+  attr_accessible :name, :email, :phone_number, :company_id, :user_type, :referred_by
   belongs_to :company
   #after_create :send_welcome_email
   

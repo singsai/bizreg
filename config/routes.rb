@@ -1,6 +1,11 @@
 Pling::Application.routes.draw do
 
-  resources :companies
+  resources :companies do
+    member do
+      get 'register'
+    end
+  end
+  
   get "companies/new"
 
   get "companies/show"

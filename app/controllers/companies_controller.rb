@@ -1,10 +1,12 @@
 class CompaniesController < ApplicationController
+  
   def new
     @company = Company.new
   end
 
   def show
-    @company = Company.find_by_name(params[:id])
+    @company = Company.find_by_permalink(params[:id])
+    #@company.name
   end
   
   def create
@@ -15,5 +17,10 @@ class CompaniesController < ApplicationController
     else
       render 'new'
     end    
+  end
+
+  def register
+    @user = User.new
+    @company = Company.find_by_permalink(params[:id])
   end
 end
