@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @company = Company.find_by_permalink(params[:id])
   end
     
   def create
@@ -22,8 +23,9 @@ class UsersController < ApplicationController
       @company = Company.find_by_permalink(@user.company_id)
       UserMailer.welcome_email(@user, @company).deliver      
       #UserMailer.welcome_email(@user, @company).deliver      
-      redirect_to '/registrationconfirmed'
       
+      #redirect_to '/registrationconfirmed'
+      render 'show'
         
       # if request.referer.include? "free"
       #   UserMailer.welcome_email(@user, "free").deliver
