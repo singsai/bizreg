@@ -13,13 +13,13 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :skype, :user_type, :referred_by
+  attr_accessible :name, :email, :phone_number, :user_type, :referred_by
   #after_create :send_welcome_email
   
   validates :name, :presence => true
   validates :email, :presence => true, :uniqueness => true
   validates_format_of :email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
-  validates :skype, :presence => true
+  validates :phone_number, :presence => true
 
   private
 
