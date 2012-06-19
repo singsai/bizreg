@@ -5,10 +5,13 @@ Pling::Application.routes.draw do
 #  match '/companies' => 'companies#show'
 #  match 'companies#show' => 'companies/:company_id/show'
 
+
   resources :companies do
     resources :users 
   end
-  
+
+  match '/companies/:company_id/register' => 'users#new' 
+
 
   #get 'companies/new', to: 'users#new'
   #get 'admin/companies/new', to: 'companies#new'
