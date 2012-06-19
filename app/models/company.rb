@@ -19,8 +19,9 @@ end
 #
 #  id         :integer         not null, primary key
 #  name       :string(255)
-#  logo       :string(255)
+#  logo_file  :string(255)
 #  created_at :datetime        not null
 #  updated_at :datetime        not null
+#  permalink  :string(255)
 #
 

@@ -1,55 +1,32 @@
 class UsersController < ApplicationController
-
+  before_filter :load_company
+  
   def new
     @user = User.new
-    @company = Company.find_by_name(params[:id])
-    @user.user_type = params[:user_type]
+    #@user = @company.users.new
+    # @company = Company.find_by_name(params[:id])
+    # @user.user_type = params[:user_type]
   end
 
   def show
     @user = User.find(params[:id])
-    @company = Company.find_by_permalink(params[:id])
+    #@user = @company.users.find(params[:id])
   end
     
   def create
-    @user = User.new(params[:user])
+    
+    @user = @company.users.new(params[:user])
     if @user.save
-      flash[:success] = "Thanks for signing up"
-      
-      #redirect_to @user
-      #redirect_to '/admin/companies/new' #works
-      
-      #alert(@company.name)
-      @company = Company.find_by_permalink(@user.company_id)
-      UserMailer.welcome_email(@user, @company).deliver      
-      #UserMailer.welcome_email(@user, @company).deliver      
-      
-      #redirect_to '/registrationconfirmed'
       render 'show'
-        
-      # if request.referer.include? "free"
-      #   UserMailer.welcome_email(@user, "free").deliver
-      #   render 'thanks_free'  
-      # else  
-      #   UserMailer.welcome_email(@user, "regular").deliver
-      #   redirect_to @user
-      # end
-      
     else
-      #render '/register/new'
-      #render :nothing => true
-
-      render 'companies/register' 
-
-
-
-      #render :template => 'companies#register'
-    end            
+      render :json => { "errors" => @user.errors } 
+    end
+        
   end
-
-  def new_free
-    @user = User.new
-    @user.user_type = params[:user_type]
+  
+  private
+  def load_company
+    @company = Company.find_by_permalink(params[:company_id])
   end
 
 end

@@ -1,43 +1,45 @@
 Pling::Application.routes.draw do
 
-  get 'companies/new', to: 'users#new'
-  get 'admin/companies/new', to: 'companies#new'
+#  match 'users#new', to: 'companies#register'
+#  resources :users, :companies
+#  match '/companies' => 'companies#show'
+#  match 'companies#show' => 'companies/:company_id/show'
 
   resources :companies do
-    member do
-      match 'register'
-    end
+    resources :users 
   end
+  
+
+  #get 'companies/new', to: 'users#new'
+  #get 'admin/companies/new', to: 'companies#new'
 
   # resources :companies do
-  #   match 'register'
-  #   resources :users do
+  #   member do
+  #     match 'register'
   #   end
   # end
+
+
+
+  #get "companies/show"
+
+  #match '/free', to: 'users#new_free'
   
-#  get "companies/new"
-
-  get "companies/show"
-
-  match '/free', to: 'users#new_free'
-  #match '/freehr', to: 'users#new_free_hr'
-  #match '/thanks_free', to: 'static_pages#thanks_free'
-  resources :users
 
   #match '/thanks', to: "referrals#thanks"
   
-  root to: 'users#new'
+  #root to: 'users#new'
 
-  match '/traveler', to: 'users#new', user_type: "traveler"
-  match '/translator', to: "users#new", user_type: "translator"
-  
-  match '/profile', to: 'static_pages#profile'
-  match '/admin', to: 'static_pages#admin'
-  match '/register', to: 'static_pages#register'
-  match '/press', to: 'static_pages#about'
-  match '/about', to: 'static_pages#about'
-  match '/contact', to: 'static_pages#contact'
-  match '/registrationconfirmed', to: 'companies#thanks'
+  # match '/traveler', to: 'users#new', user_type: "traveler"
+  # match '/translator', to: "users#new", user_type: "translator"
+  # 
+  # match '/profile', to: 'static_pages#profile'
+  # match '/admin', to: 'static_pages#admin'
+  # match '/register', to: 'static_pages#register'
+  # match '/press', to: 'static_pages#about'
+  # match '/about', to: 'static_pages#about'
+  # match '/contact', to: 'static_pages#contact'
+  # match '/registrationconfirmed', to: 'companies#thanks'
 
   #match '/thanks', to: 'users#thanks'
 

@@ -12,15 +12,12 @@ class CompaniesController < ApplicationController
   def create
     @company = Company.new(params[:company])
     if @company.save
-      flash[:success] = "Company created"
-      redirect_to @company        
+      #flash[:success] = "Company created"
+      #redirect_to @company        
+      render 'show'  
     else
-      render 'new'
+     # render 'new'
     end    
   end
 
-  def register
-    @user = User.new
-    @company = Company.find_by_permalink(params[:id])
-  end
 end
