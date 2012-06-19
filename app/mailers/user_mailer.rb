@@ -2,7 +2,7 @@ class UserMailer < ActionMailer::Base
   default :from => "info@palmling.com"
   
   def welcome_email(user, company)
-    mail(:to => user.email, :bcc => "nick@palmling.com", :subject => "Thank you for registering for PalmLing!", 
+    mail(:to => user.email, :bcc => "info@palmling.com", :subject => "Thank you for registering for PalmLing!", 
     :content_type => "text/html", :body => "Dear #{user.name}, <br/><br/>Thank you for registering with 
     <a href='http://palmling.com'>PalmLing</a>. 
     PalmLing delivers real-time access to a community of human translators to facilitate cross language conversations. 
