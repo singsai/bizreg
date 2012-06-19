@@ -55784,3 +55784,47 @@ Served asset /bg.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/palmling.ico" for 127.0.0.1 at 2012-06-18 20:55:11 -0600
 Served asset /palmling.ico - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120521231744)
+Migrating to AddTypeAndReferredByToUsers (20120521232356)
+Migrating to AddIndexToUsersEmail (20120521233549)
+Migrating to RenameTypeToUserType (20120521234321)
+Migrating to AddSkypeToUser (20120614165133)
+Migrating to AddUniqueEmail (20120614190436)
+Migrating to CreateCompanies (20120618071331)
+Migrating to ChangeUserSkypeToCompanyId (20120618071935)
+Migrating to AddPhoneNumberToUsers (20120618072229)
+Migrating to AddIndexToCompaniesName (20120618073535)
+Migrating to AddPermalinkToCompanies (20120618085236)
+Migrating to ChangeCompanyLogoToLogoFile (20120618220848)
+Migrating to AddPhoneNumberToCompanies (20120619030950)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (8.4ms)[0m  ALTER TABLE "users" ADD "phone_number" varchar(255)
+SQLite3::SQLException: duplicate column name: phone_number: ALTER TABLE "users" ADD "phone_number" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120521231744)
+Migrating to AddTypeAndReferredByToUsers (20120521232356)
+Migrating to AddIndexToUsersEmail (20120521233549)
+Migrating to RenameTypeToUserType (20120521234321)
+Migrating to AddSkypeToUser (20120614165133)
+Migrating to AddUniqueEmail (20120614190436)
+Migrating to CreateCompanies (20120618071331)
+Migrating to ChangeUserSkypeToCompanyId (20120618071935)
+Migrating to AddPhoneNumberToUsers (20120618072229)
+Migrating to AddIndexToCompaniesName (20120618073535)
+Migrating to AddPermalinkToCompanies (20120618085236)
+Migrating to ChangeCompanyLogoToLogoFile (20120618220848)
+Migrating to AddPhoneNumberToCompanies (20120619030950)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (13.8ms)[0m  ALTER TABLE "companies" ADD "phone_number" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120619030950')[0m
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("companies")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_companies_on_name')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
