@@ -17,6 +17,7 @@ class UsersController < ApplicationController
     
     @user = @company.users.new(params[:user])
     if @user.save
+      UserMailer.welcome_email(@user, @company).deliver
       render 'show'
     else
       render :json => { "errors" => @user.errors } 
