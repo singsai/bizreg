@@ -70790,3 +70790,11 @@ Processing by CompaniesController#index as HTML
 Redirected to http://palmling.com
   [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" [0m
 Completed 302 Found in 66ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/companies/ibm/users" for 127.0.0.1 at 2012-06-19 01:44:58 -0600
+Processing by UsersController#index as HTML
+  Parameters: {"company_id"=>"ibm"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'ibm' LIMIT 1
+Redirected to http://palmling.com
+Completed 302 Found in 80ms (ActiveRecord: 0.7ms)

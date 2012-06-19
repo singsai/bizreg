@@ -12,6 +12,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     #@user = @company.users.find(params[:id])
   end
+
+  def index
+    redirect_to "http://palmling.com"
+  end
     
   def create
     
