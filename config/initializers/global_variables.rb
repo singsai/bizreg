@@ -1,1 +1,1 @@
-HOST_URL = "http://localhost:3000"
+HOST_URL = "http://portal.palmling.com" #no dashes here after .com
