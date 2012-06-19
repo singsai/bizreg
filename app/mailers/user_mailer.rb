@@ -6,15 +6,14 @@ class UserMailer < ActionMailer::Base
     :content_type => "text/html", :body => "Dear #{user.name}, <br/><br/>Thank you for registering with 
     <a href='http://palmling.com'>PalmLing</a>. 
     PalmLing delivers real-time access to a community of human translators to facilitate cross language conversations. 
-    As a valued member of #{company.name}, you will have free access to the service for 5 days. 
-    This promotion is being provided in honor of Bill Smith, Senior Vice President of Strategic Partnerships. 
+    As a valued member of #{company.name}, you will have free access to our Spanish<->English translation service for 5 days.
     <br/><br/>
     After 5 days, this phone number will expire and you can register for a premium account by visiting
     <a href='http://palmling.com'>PalmLing.com</a>
     <br/><br/>
-    To access our global community of interpreters, dial #{company.phone_number} (THIS IS THE NUMBER THAT WILL CHANGE FOR EACH COMPANY). 
-    Please note, to be considered for promotions, discounts and other prizes, please make sure your email has been registered at
-    ( <a href='#{HOST_URL}/companies/#{company.permalink}/register'>'#{HOST_URL}/companies/#{company.permalink}/register'</a>.
+    To access our global community of translators, call #{company.phone_number}. 
+    To be considered for promotions, discounts and other prizes, please make sure your email has been registered at
+    <a href='#{HOST_URL}/companies/#{company.permalink}/register'>'#{HOST_URL}/companies/#{company.permalink}/register'</a>.
     <br/><br/>Thank you, <br/><br/>
     The PalmLing Team, <br/><a href='http://www.palmling.com'>PalmLing<a/>. <br/><br/>
     <a href='https://twitter.com/#!/palmling'><img src='http://dl.dropbox.com/u/3722777/icon/twitter_16.png' /></a><span> </span><a href='https://twitter.com/#!/palmling'>Twitter</a><br/>
