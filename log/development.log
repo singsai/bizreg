@@ -60951,3 +60951,410 @@ Served asset /bg.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/palmling.png" for 127.0.0.1 at 2012-06-18 22:18:02 -0600
 Served asset /palmling.png - 304 Not Modified (0ms)
+
+
+Started GET "/companies/ibm/users/register" for 127.0.0.1 at 2012-06-18 22:43:48 -0600
+
+NoMethodError (undefined method `redirect_to' for #<ActionDispatch::Routing::Mapper:0x007fa2a6652ac0>):
+  config/routes.rb:15:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/companies/ibm/users/register" for 127.0.0.1 at 2012-06-18 22:44:36 -0600
+
+SyntaxError (/Users/crazyfarm/rails_apps/bizreg/config/routes.rb:15: syntax error, unexpected tASSOC, expecting keyword_end
+  root => redirect("http://www.palmling.com")
+         ^):
+  activesupport (3.2.1) lib/active_support/dependencies.rb:245:in `load'
+  activesupport (3.2.1) lib/active_support/dependencies.rb:245:in `block in load'
+  activesupport (3.2.1) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.1) lib/active_support/dependencies.rb:245:in `load'
+  railties (3.2.1) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (3.2.1) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (3.2.1) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (3.2.1) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (3.2.1) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (3.2.1) lib/active_support/file_update_checker.rb:78:in `call'
+  activesupport (3.2.1) lib/active_support/file_update_checker.rb:78:in `execute'
+  activesupport (3.2.1) lib/active_support/file_update_checker.rb:86:in `execute_if_updated'
+  railties (3.2.1) lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+  railties (3.2.1) lib/rails/application/finisher.rb:68:in `block (2 levels) in <module:Finisher>'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:429:in `_run__2614055050347700087__prepare__2078182623741904570__callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/companies/ibm/users/register" for 127.0.0.1 at 2012-06-18 22:44:54 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"company_id"=>"ibm", "id"=>"register"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'ibm' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "register"]]
+Completed 500 Internal Server Error in 23ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=register):
+  app/controllers/users_controller.rb:12:in `show'
+
+
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-18 22:45:07 -0600
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/companies/new" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Processing by CompaniesController#new as HTML
+  Rendered companies/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."permalink" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/referrals.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /referrals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/referrals.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /referrals.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /bg.jpg - 304 Not Modified (26ms)
+
+
+Started GET "/assets/palmling.png" for 127.0.0.1 at 2012-06-18 22:45:11 -0600
+Served asset /palmling.png - 304 Not Modified (2ms)
+
+
+Started POST "/companies" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/ByAXA4lsnOMxBjNsKV8Wpi45Pos8cjtjoqE4GJ21f8=", "company"=>{"name"=>"Test", "logo_file"=>"tere", "phone_number"=>"223"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCompany Exists (0.1ms)[0m  [1mSELECT 1 FROM "companies" WHERE "companies"."name" = 'Test' LIMIT 1[0m
+  [1m[35mCompany Exists (0.1ms)[0m  SELECT 1 FROM "companies" WHERE "companies"."logo_file" = 'tere' LIMIT 1
+  [1m[36mSQL (23.8ms)[0m  [1mINSERT INTO "companies" ("created_at", "logo_file", "name", "permalink", "phone_number", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 19 Jun 2012 04:45:18 UTC +00:00], ["logo_file", "tere"], ["name", "Test"], ["permalink", "test"], ["phone_number", "223"], ["updated_at", Tue, 19 Jun 2012 04:45:18 UTC +00:00]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/companies/test
+Completed 302 Found in 129ms (ActiveRecord: 26.8ms)
+
+
+Started GET "/companies/test" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'test' LIMIT 1[0m
+  Rendered companies/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'test' LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/referrals.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /referrals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/referrals.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /referrals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /bg.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/companies/tere" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Processing by CompaniesController#show as */*
+  Parameters: {"id"=>"tere"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'tere' LIMIT 1[0m
+  Rendered companies/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: <div id="skype-header" class="row span6 offset3">
+    3: <!--h1>PalmLing for Skype</h1>
+    4: <h2>Step 2 - Select a Plan</h2-->
+    5: <p>Copy this URL and send it to <span class="skype-name"> <%= @company.name %> employees</span>, <br/><!-- Thank you for signing up for PalmLing for Skype! <br />  To get started, please select a plan that fits your needs. -->
+    6: 	
+    7: 	<input type=text_field value="<%= HOST_URL %>/companies/<%= @company.permalink %>/register">
+    8: 	<br/><br/>
+  app/views/companies/show.html.erb:5:in `_app_views_companies_show_html_erb___1964018805234914814_70168256513620'
+
+
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/assets/palmling.png" for 127.0.0.1 at 2012-06-18 22:45:18 -0600
+Served asset /palmling.png - 304 Not Modified (28ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-18 22:45:38 -0600
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/crazyfarm/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-18 22:45:54 -0600
+
+
+Started GET "/companies/tere" for 127.0.0.1 at 2012-06-18 22:45:57 -0600
+Processing by CompaniesController#show as */*
+  Parameters: {"id"=>"tere"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'tere' LIMIT 1
+  Rendered companies/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: <div id="skype-header" class="row span6 offset3">
+    3: <!--h1>PalmLing for Skype</h1>
+    4: <h2>Step 2 - Select a Plan</h2-->
+    5: <p>Copy this URL and send it to <span class="skype-name"> <%= @company.name %> employees</span>, <br/><!-- Thank you for signing up for PalmLing for Skype! <br />  To get started, please select a plan that fits your needs. -->
+    6: 	
+    7: 	<input type=text_field value="<%= HOST_URL %>/companies/<%= @company.permalink %>/register">
+    8: 	<br/><br/>
+  app/views/companies/show.html.erb:5:in `_app_views_companies_show_html_erb___1964018805234914814_70168256513620'
+
+
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/crazyfarm/.rvm/gems/ruby-1.9.3-p194@pling/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.8ms)
+
+
+Started GET "/companies/test" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"test"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'test' LIMIT 1[0m
+  Rendered companies/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'test' LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/referrals.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /referrals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/referrals.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /referrals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /application.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /bg.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/palmling.png" for 127.0.0.1 at 2012-06-18 22:45:59 -0600
+Served asset /palmling.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-18 22:46:03 -0600

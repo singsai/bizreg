@@ -12,6 +12,8 @@ Pling::Application.routes.draw do
   match '/companies/:company_id/register' => 'users#new' 
   match '/companies/:company_id/new' => 'users#new' 
 
+  root :to => redirect("http://www.palmling.com")
+
   # match '/traveler', to: 'users#new', user_type: "traveler"
   # match '/translator', to: "users#new", user_type: "translator"
 
