@@ -1,0 +1,18 @@
+<div id="company_list" class="whiteness">
+	<div class="span6 temp-skype">
+		<table>					 
+			<tr>
+				<td>Company</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;Registration URL</td>
+			</tr>
+			<% @companies.each do |company| %>			
+			<tr>
+				<td><%= company.name %></td>
+				<td>
+					<input type=text_field readonly="true" value='<%= company.logo_file %>' style="width:500px">
+				</td>
+			</tr>
+			<% end %>
+		</table>				
+	</div>
+</div>
