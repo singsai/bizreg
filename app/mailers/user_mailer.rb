@@ -7,7 +7,7 @@ class UserMailer < ActionMailer::Base
     <a href='http://palmling.com'>PalmLing</a>. 
     PalmLing delivers real-time access to a community of human translators to facilitate cross language conversations. 
     As a valued member of #{company.name}, you will have free access to the service for 5 days. 
-    This promotion is being provided in honor of BUSINESS_LEAD_AND_TITLE__provided_by_PL_team. 
+    This promotion is being provided in honor of Bill Smith, Senior Vice President of Strategic Partnerships. 
     <br/>
     After 5 days, this phone number will expire and you can register for a premium account by visiting
     <a href='http://palmling.com'>PalmLing.com</a>
