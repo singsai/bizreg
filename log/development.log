@@ -70783,3 +70783,10 @@ Served asset /palmling.png - 304 Not Modified (2ms)
 
 Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-06-19 00:05:49 -0600
 Served asset /bg.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/companies/" for 127.0.0.1 at 2012-06-19 00:23:51 -0600
+Processing by CompaniesController#index as HTML
+Redirected to http://palmling.com
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" [0m
+Completed 302 Found in 66ms (ActiveRecord: 2.6ms)

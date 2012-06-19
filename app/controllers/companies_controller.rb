@@ -1,13 +1,14 @@
 class CompaniesController < ApplicationController
   
   def new
-    #redirect_to 'http://palmling.com' #See note below
+    redirect_to 'http://palmling.com' #See note below
     #Implement this in production of portal.palmling.com for security
     #until there is finally an authentication system in place    
     @company = Company.new
   end
   
   def index
+    redirect_to 'http://palmling.com' 
     @companies = Company.all    
   end
 
