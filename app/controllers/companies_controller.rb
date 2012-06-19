@@ -13,10 +13,10 @@ class CompaniesController < ApplicationController
     @company = Company.new(params[:company])
     if @company.save
       #flash[:success] = "Company created"
-      #redirect_to @company        
-      render 'show'  
+      redirect_to @company        
+      #render 'show'  
     else
-     # render 'new'
+      render 'new'
     end    
   end
 
