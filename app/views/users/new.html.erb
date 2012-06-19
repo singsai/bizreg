@@ -12,13 +12,13 @@
       <%= f.error_messages %> 
 
       <%= f.label :name %>
-      <%= f.text_field :name, :placeholder => "First and Last" %>
+      <%= f.text_field :name, :placeholder => "First and Last", :maxlength => 50 %>
 
       <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%= f.text_field :email, :maxlength => 40 %>
 
       <%= f.label :phone_number %>
-      <%= f.text_field :phone_number, :placeholder => "xxx-xxx-xxxx" %>
+      <%= f.text_field :phone_number, :placeholder => "xxx-xxx-xxxx", :maxlength => 16 %>
 			
       <%= f.submit "Sign up", class: "btn btn-large btn-success" %>			
 			<div class='hideme'>

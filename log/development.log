@@ -71998,3 +71998,154 @@ Served asset /bg.jpg - 304 Not Modified (3ms)
 
 Started GET "/assets/palmling.png" for 127.0.0.1 at 2012-06-19 02:54:02 -0600
 Served asset /palmling.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-06-19 15:41:54 -0600
+
+
+Started GET "/companies/ibm/register" for 127.0.0.1 at 2012-06-19 15:41:57 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"company_id"=>"ibm"}
+  [1m[36mCompany Load (16.4ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'ibm' LIMIT 1[0m
+  Rendered users/new.html.erb within layouts/application (132.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'ibm' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 200 OK in 662ms (Views: 489.4ms | ActiveRecord: 19.7ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /companies.css - 200 OK (4ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /companies.js - 200 OK (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /static_pages.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /users.css - 200 OK (5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /custom.css - 200 OK (9ms)
+
+
+Started GET "/assets/referrals.css?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /referrals.css - 200 OK (2ms)
+
+
+Started GET "/assets/referrals.js?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /referrals.js - 200 OK (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /static_pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-19 15:41:58 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-19 15:41:59 -0600
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-19 15:41:59 -0600
+Served asset /application.js - 200 OK (10ms)
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-06-19 15:41:59 -0600
+Served asset /bg.jpg - 200 OK (57ms)
+
+
+Started GET "/assets/palmling.png" for 127.0.0.1 at 2012-06-19 15:41:59 -0600
+Served asset /palmling.png - 200 OK (30ms)
+
+
+Started GET "/companies/ibm/register" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"company_id"=>"ibm"}
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'ibm' LIMIT 1
+  Rendered users/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."permalink" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."permalink" = 'ibm' LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 37ms (Views: 15.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/referrals.css?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /referrals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/referrals.js?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /referrals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /bg.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/palmling.png" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /palmling.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/palmling.ico" for 127.0.0.1 at 2012-06-19 15:42:52 -0600
+Served asset /palmling.ico - 200 OK (9ms)

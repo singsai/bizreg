@@ -18,10 +18,10 @@ class User < ActiveRecord::Base
   belongs_to :company
   #after_create :send_welcome_email
   
-  validates :name, :presence => true
-  validates :email, :presence => true, :uniqueness => true
+  validates :name, :presence => true, length: { maximum: 50 }
+  validates :email, :presence => true, :uniqueness => true, length: { maximum: 40 }
   validates_format_of :email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
-  validates :phone_number, :presence => true
+  validates :phone_number, :presence => true, length: { maximum: 16 }
 
   #private
 
