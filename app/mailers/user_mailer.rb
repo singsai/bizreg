@@ -13,7 +13,7 @@ class UserMailer < ActionMailer::Base
     <a href='http://palmling.com'>PalmLing.com</a>
     To access our global community of interpreters, dial XXX-XXX-XXXX (THIS IS THE NUMBER THAT WILL CHANGE FOR EACH COMPANY). 
     Please note, to be considered for promotions, discounts and other prizes, please make sure your email has been registered at
-    (exampleLink.com/companies/company_name).
+    ( <a href='#{HOST_URL}/companies/#{company.name}/register'>'#{HOST_URL}/companies/#{company.name}/register'</a>.
     <br/><br/>Thank you, <br/><br/>
     The PalmLing Team, <br/><a href='http://www.palmling.com'>PalmLing<a/>. <br/><br/>
     <a href='https://twitter.com/#!/palmling'><img src='http://dl.dropbox.com/u/3722777/icon/twitter_16.png' /></a><span> </span><a href='https://twitter.com/#!/palmling'>Twitter</a><br/>
