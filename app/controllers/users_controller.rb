@@ -20,7 +20,8 @@ class UsersController < ApplicationController
       UserMailer.welcome_email(@user, @company).deliver
       render 'show'
     else
-      render :json => { "errors" => @user.errors } 
+      render 'new'
+      #render :json => { "errors" => @user.errors } 
     end
         
   end
