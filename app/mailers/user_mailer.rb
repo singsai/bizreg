@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default :from => "info@palmling.com"
+  default :from => "info@verbalizeit.com"
   
   def welcome_email(user, company)
     mail(:to => user.email, :bcc => "info@verbalizeit.com", :subject => "Thank you for registering for VerbalizeIt!", 

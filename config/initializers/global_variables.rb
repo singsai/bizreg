@@ -1,1 +1,1 @@
-HOST_URL = "http://portal.palmling.com" #no dashes here after .com
+HOST_URL = "http://portal.verbalizeit.com" #no dashes here after .com
