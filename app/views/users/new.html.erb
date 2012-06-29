@@ -1,31 +1,42 @@
 <%= provide(:title, "for #{@company.name}") %>
-<div id="skype-header" class="row span6 offset3">
-<h1>PalmLing for <%= @company.name %></h1>
+<div id="skype-header" class="row span6 offset3" style="margin-left:10px">
+<h1>VerbalizeIt for <%= @company.name %></h1>
 <!--h2>Step 1 - Signup</h2-->
 <p>To gain immediate phone-based access to our community of translators, please complete the information below.
 </p>
 </div>
-
-<div class="row">
-  <div class="span6 offset3 temp-skype">
-    <%= form_for [@company, @user] do |f| %>
-      <%= f.error_messages %> 
-
-      <%= f.label :name %>
-      <%= f.text_field :name, :placeholder => "First and Last", :maxlength => 50 %>
-
-      <%= f.label :email %>
-      <%= f.text_field :email, :maxlength => 40 %>
-
-      <%= f.label :phone_number %>
-      <%= f.text_field :phone_number, :placeholder => "xxx-xxx-xxxx", :maxlength => 16 %>
-			
-      <%= f.submit "Sign up", class: "btn btn-large btn-success" %>			
-			<div class='hideme'>
-			<%= f.text_field :user_type %><%= f.text_field :referred_by %>
-			</div>
-			
-    <% end %>
-  </div>
+<div class="span6">
+    <div class="container">
+        <div class="span5" style="margin-left:10px">
+			<div class="control-group">
+			    <%= form_for [@company, @user], :html => { :class=>"form-horizontal" } do |f| %>
+			      <%= f.error_messages %> 
+	    		<div class="control-group">	
+			      <%= f.label :name, :class=>"control-label" %>
+			    </div>
+		  		<div class="controls">
+			  	  <%= f.text_field :name, :placeholder => "First and Last", :maxlength => 40 %>
+			    </div>				
+				<div class="control-group">	
+			      <%= f.label :email, :class=>"control-label" %>
+			    </div>
+		  		<div class="controls">
+			      <%= f.text_field :email, :maxlength => 40 %>
+			    </div>
+	    		<div class="control-group">	
+			      <%= f.label :phone_number, :class=>"control-label"  %>
+			    </div>
+		  		<div class="controls">
+			      <%= f.text_field :phone_number, :placeholder => "xxx-xxx-xxxx", :maxlength => 16 %>
+			    </div>
+				<div class="control-group">	
+				  <div class="controls">				
+			      	<%= f.submit "Sign up", class: "btn btn-large btn-success" %>			
+				  </div>
+				</div>
+			    <% end %>
+	  		</div>
+		</div>
+  	</div>
 </div>
 

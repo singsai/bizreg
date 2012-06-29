@@ -14,10 +14,10 @@
         <div class="container links">
             <ul class="span3">
                 <li class="title">more about verbalize.it</li>
-                <li><%= link_to "about us", '#'%></li>
-                <li><%= link_to "the team", '#'%></li>
-                <li><%= link_to "traveler FAQ", '#'%></li>
-                <li><%= link_to "press", '#'%></li>
+                <li><%= link_to "about us", about_path%></li>
+                <li><%= link_to "the team", the_team_path%></li>
+                <li><%= link_to "traveler FAQ", traveler_faq_path%></li>
+                <li><%= link_to "press", press_path%></li>
             </ul>
             <ul class="span3">
                 <li class="title">our services</li>
@@ -28,8 +28,8 @@
             </ul>
             <ul class="span3">
                 <li class="title">translators</li>
-                <li><%= link_to "translator FAQ", '#' %></li>
-                <li><%= link_to "become a translator", '#' %></li>
+                <li><%= link_to "translator FAQ", interpretor_faq_path %></li>
+                <li><%= link_to "become a translator", translator_landing_path %></li>
             </ul>
             <ul class="span3 contact">
 
@@ -43,6 +43,27 @@
             Copyright 2012, Verbalize.it Inc  All Rights Reserved.
         </div><!-- ./container -->
     </footer>
-    <%= yield :footer_js %>
+    <%= javascript_include_tag "v2/jquery-min.js", "v2/underscore-min.js", "v2/backbone-min.js", "v2/bootstrap.min.js","v2/less-min.js", "bootstrap-carousel.js" %>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('.carousel').carousel({
+            interval: 3000
+        })
+      });
+    </script>
+    <!--
+    <script type="text/javascript">
+         document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">
+     SnapABug.addButton("a656be5c-d0dc-4b4f-b255-aa24d5fbf2c6","0","55%");
+     </script>
+     -->
+    
+   
+    <!--[if lt IE 9]>
+        <script src="v2/html5shiv.js"></script>
+    <![endif]-->
+
 </body>
 </html>

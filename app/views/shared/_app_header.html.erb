@@ -25,12 +25,11 @@
 </head>
 <body class="inner">
 
-    <%= render ('shared/main_header_nav') %>
+    <%= render ('shared/header_tag') %>
     <% if content_for? :main_section_content_class %>
      <%= yield :main_section_content_class %>
     <% else %>
         <section class="content">
-     
-    <% end %>
+     <% end %>
         <div class="container">
     <%= render ('/layouts/v2/messages') %>
